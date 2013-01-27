@@ -1,0 +1,61 @@
+<%= form_for(@service_order) do |f| %>
+  <% if @service_order.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@service_order.errors.count, "error") %> prohibited this service_order from being saved:</h2>
+
+      <ul>
+      <% @service_order.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :funcao %><br />
+    <%= f.text_field :funcao %>
+  </div>
+  <div class="field">
+    <%= f.label :setor %><br />
+    <%= f.text_field :setor %>
+  </div>
+  <div class="field">
+    <%= f.label :descricao_da_funcao %><br />
+    <%= f.text_field :descricao_da_funcao %>
+  </div>
+  <div class="field">
+    <%= f.label :agentes_associados_as_atividades %><br />
+    <%= f.text_field :agentes_associados_as_atividades %>
+  </div>
+  <div class="field">
+    <%= f.label :epis_de_uso_obrigatorio %><br />
+    <%= f.text_field :epis_de_uso_obrigatorio %>
+  </div>
+  <div class="field">
+    <%= f.label :recomendacoes %><br />
+    <%= f.text_field :recomendacoes %>
+  </div>
+  <div class="field">
+    <%= f.label :procedimentos_em_caso_de_acidentes %><br />
+    <%= f.text_field :procedimentos_em_caso_de_acidentes %>
+  </div>
+  <div class="field">
+    <%= f.label :punicoes %><br />
+    <%= f.text_field :punicoes %>
+  </div>
+  <div class="field">
+    <%= f.label :observacoes %><br />
+    <%= f.text_field :observacoes %>
+  </div>
+  <div class="field">
+    <%= f.label :data_de_elaboracao %><br />
+    <%= f.date_select :data_de_elaboracao %>
+  </div>
+  <div class="field">
+    <%= f.label :revisao %><br />
+    <%= f.number_field :revisao %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

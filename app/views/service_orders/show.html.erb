@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Funcao:</b>
+  <%= @service_order.funcao %>
+</p>
+
+<p>
+  <b>Setor:</b>
+  <%= @service_order.setor %>
+</p>
+
+<p>
+  <b>Descricao da funcao:</b>
+  <%= @service_order.descricao_da_funcao %>
+</p>
+
+<p>
+  <b>Agentes associados as atividades:</b>
+  <%= @service_order.agentes_associados_as_atividades %>
+</p>
+
+<p>
+  <b>Epis de uso obrigatorio:</b>
+  <%= @service_order.epis_de_uso_obrigatorio %>
+</p>
+
+<p>
+  <b>Recomendacoes:</b>
+  <%= @service_order.recomendacoes %>
+</p>
+
+<p>
+  <b>Procedimentos em caso de acidentes:</b>
+  <%= @service_order.procedimentos_em_caso_de_acidentes %>
+</p>
+
+<p>
+  <b>Punicoes:</b>
+  <%= @service_order.punicoes %>
+</p>
+
+<p>
+  <b>Observacoes:</b>
+  <%= @service_order.observacoes %>
+</p>
+
+<p>
+  <b>Data de elaboracao:</b>
+  <%= @service_order.data_de_elaboracao %>
+</p>
+
+<p>
+  <b>Revisao:</b>
+  <%= @service_order.revisao %>
+</p>
+
+
+<%= link_to 'Edit', edit_service_order_path(@service_order) %> |
+<%= link_to 'Back', service_orders_path %>

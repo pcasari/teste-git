@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  funcao: MyString
+  setor: MyString
+  descricao_da_funcao: MyString
+  agentes_associados_as_atividades: MyString
+  epis_de_uso_obrigatorio: MyString
+  recomendacoes: MyString
+  procedimentos_em_caso_de_acidentes: MyString
+  punicoes: MyString
+  observacoes: MyString
+  data_de_elaboracao: 2013-01-27
+  revisao: 1
+
+two:
+  funcao: MyString
+  setor: MyString
+  descricao_da_funcao: MyString
+  agentes_associados_as_atividades: MyString
+  epis_de_uso_obrigatorio: MyString
+  recomendacoes: MyString
+  procedimentos_em_caso_de_acidentes: MyString
+  punicoes: MyString
+  observacoes: MyString
+  data_de_elaboracao: 2013-01-27
+  revisao: 1

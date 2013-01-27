@@ -1,0 +1,43 @@
+<h1>Listando as ordens de serviço</h1>
+
+<table>
+  <tr>
+    <th>Funcao</th>
+    <th>Setor</th>
+    <th>Descricao da funcao</th>
+    <th>Agentes associados as atividades</th>
+    <th>Epis de uso obrigatorio</th>
+    <th>Recomendacoes</th>
+    <th>Procedimentos em caso de acidentes</th>
+    <th>Punicoes</th>
+    <th>Observacoes</th>
+    <th>Data de elaboracao</th>
+    <th>Revisao</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @service_orders.each do |service_order| %>
+  <tr>
+    <td><%= service_order.funcao %></td>
+    <td><%= service_order.setor %></td>
+    <td><%= service_order.descricao_da_funcao %></td>
+    <td><%= service_order.agentes_associados_as_atividades %></td>
+    <td><%= service_order.epis_de_uso_obrigatorio %></td>
+    <td><%= service_order.recomendacoes %></td>
+    <td><%= service_order.procedimentos_em_caso_de_acidentes %></td>
+    <td><%= service_order.punicoes %></td>
+    <td><%= service_order.observacoes %></td>
+    <td><%= service_order.data_de_elaboracao %></td>
+    <td><%= service_order.revisao %></td>
+    <td><%= link_to 'Show', service_order %></td>
+    <td><%= link_to 'Edit', edit_service_order_path(service_order) %></td>
+    <td><%= link_to 'Destroy', service_order, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Service order', new_service_order_path %>
